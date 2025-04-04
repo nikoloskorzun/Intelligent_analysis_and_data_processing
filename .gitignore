@@ -1,5 +1,5 @@
 *.py
 Untitled*
 *.ipynb_checkpoints
-sys_anal
-evo
+*.pkl
+__pycache__
