@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <meta charset="UTF-8">
+</head>
+<body>
+    <div class="container">
+        <h1>ЛАБА 1</h1>
+        <form id="predictionForm">
+            <div class="input-row">
+                <div class="input-group">
+                    <label for="relative_compactness">Относительная компактность:</label>
+                    <input type="number" step="any" id="relative_compactness" required>
+                </div>
+                <div class="input-group">
+                    <label for="surface_area">Площадь поверхности:</label>
+                    <input type="number" step="any" id="surface_area" required>
+                </div>
+                <div class="input-group">
+                    <label for="continuous_wall_area">Площадь сплошной стены:</label>
+                    <input type="number" step="any" id="continuous_wall_area" required>
+                </div>
+            </div>
+
+            <div class="input-row">
+                <div class="input-group">
+                    <label for="roof_area">Зона крыши:</label>
+                    <input type="number" step="any" id="roof_area" required>
+                </div>
+                <div class="input-group">
+                    <label for="total_height">Общая высота:</label>
+                    <input type="number" step="any" id="total_height" required>
+                </div>
+                <div class="input-group">
+                    <label for="orientation">Ориентация:</label>
+                    <input type="number" step="any" id="orientation" required>
+                </div>
+            </div>
+
+            <div class="input-row">
+                <div class="input-group">
+                    <label for="continuous_glazing_area">Площадь сплошного остекления:</label>
+                    <input type="number" step="any" id="continuous_glazing_area" required>
+                </div>
+                <div class="input-group">
+                    <label for="glazing_area_distribution">Распределение площади остекления:</label>
+                    <input type="number" step="any" id="glazing_area_distribution" required>
+                </div>
+            </div>
+
+            <button type="submit">Вычислить отопительную нагрузку</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
