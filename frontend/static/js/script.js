@@ -13,7 +13,7 @@ document.getElementById('predictionForm').addEventListener('submit', async (e) =
     };
 
     try {
-        const response = await fetch('http://localhost:8000/predict', {
+        const response = await fetch('http://45.156.213.100:8000/predict', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
