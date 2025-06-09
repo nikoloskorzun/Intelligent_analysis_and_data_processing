@@ -7,7 +7,7 @@ def print_results(results):
 def print_scores(scores):
     s = ""
     for el in scores:
-        s+=f"{el} = {scores[el]:5.4f} "
+       s+=f"{el} = {scores[el]:11.10f} "
     return s
 
 def interactive_grouper(results):

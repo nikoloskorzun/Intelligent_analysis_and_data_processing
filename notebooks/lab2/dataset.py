@@ -39,14 +39,24 @@ class Dataset:
         self._share_split_valid = share_split_valid
         self._seed = seed
         self._set_TRAIN_TEST_VALID()
+        
+        
+        
+    def _set_TRAIN_TEST_VALID(self):
+        self._data_X_train, self._data_X_test, self._data_Y_train, self._data_Y_test = train_test_split(self.X, self.Y, test_size=(self._share_split_test + self._share_split_valid), random_state=self._seed)
+        self._data_X_test, self._data_X_valid, self._data_Y_test, self._data_Y_valid = train_test_split(self._data_X_test, self._data_Y_test, test_size=(self._share_split_valid / (self._share_split_test + self._share_split_valid)), random_state=self._seed)
+    
+        
+        
+        
+        
     def _set_X_Y(self):
         self._data_X = self._data.drop(self._target_features, axis=1)
         self._data_Y = self._data[self._target_features]
+        
 
-    def _set_TRAIN_TEST_VALID(self):
-        self._data_X_train, self._data_X_test, self._data_Y_train, self._data_Y_test = train_test_split(self.X, self.Y, test_size=self._share_split_test, random_state=self._seed)
-        self._data_X_test, self._data_X_valid, self._data_Y_test, self._data_Y_valid = train_test_split(self._data_X_test, self._data_Y_test, test_size=self._share_split_valid / self._share_split_test, random_state=self._seed)
-    
+
+
     
     @property
     def X(self)->pd.DataFrame:
