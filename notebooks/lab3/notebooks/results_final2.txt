@@ -1,0 +1,56 @@
+
+
+df_enhanced.csv_selected_features.csv_scaled.csv; {'input_shape': 12, 'num_classes': 7, 'optimizer': 'adam', 'learning_rate': 0.0001, 'dense_units': [128, 64, 32], 'kernel_size': 3, 'pool_size': 1, 'use_batch_norm': True, 'filters': [16, 32, 64, 128, 256]};train; acc= 0.9112388232267694;
+train; bal_acc= 0.8785387885850844;
+train; f1_macro= 0.8686100894950887;
+train; f1_weighted= 0.91126638455998;
+train; classification_report=               precision    recall  f1-score   support
+
+     Class 1       0.90      0.91      0.90    123958
+     Class 2       0.93      0.92      0.93    179092
+     Class 3       0.91      0.91      0.91     19631
+     Class 4       0.72      0.88      0.79      1585
+     Class 5       0.79      0.76      0.78      6744
+     Class 6       0.86      0.84      0.85     10625
+     Class 7       0.92      0.93      0.93     12112
+
+    accuracy                           0.91    353747
+   macro avg       0.86      0.88      0.87    353747
+weighted avg       0.91      0.91      0.91    353747
+;
+test; acc= 0.9010794392061027;
+test; bal_acc= 0.8605906414764044;
+test; f1_macro= 0.8493032119220753;
+test; f1_weighted= 0.901214986098273;
+test; classification_report=               precision    recall  f1-score   support
+
+     Class 1       0.88      0.90      0.89     35105
+     Class 2       0.92      0.91      0.92     51319
+     Class 3       0.90      0.90      0.90      5754
+     Class 4       0.66      0.82      0.73       434
+     Class 5       0.75      0.75      0.75      1852
+     Class 6       0.84      0.83      0.84      3094
+     Class 7       0.92      0.92      0.92      3513
+
+    accuracy                           0.90    101071
+   macro avg       0.84      0.86      0.85    101071
+weighted avg       0.90      0.90      0.90    101071
+;
+valid; acc= 0.9011397815418711;
+valid; bal_acc= 0.8569560773627992;
+valid; f1_macro= 0.8465548329322049;
+valid; f1_weighted= 0.9011882705916215;
+valid; classification_report=               precision    recall  f1-score   support
+
+     Class 1       0.89      0.90      0.89     17924
+     Class 2       0.92      0.92      0.92     25510
+     Class 3       0.89      0.89      0.89      2750
+     Class 4       0.70      0.84      0.76       232
+     Class 5       0.74      0.73      0.73       931
+     Class 6       0.83      0.81      0.82      1479
+     Class 7       0.90      0.91      0.91      1710
+
+    accuracy                           0.90     50536
+   macro avg       0.84      0.86      0.85     50536
+weighted avg       0.90      0.90      0.90     50536
+;

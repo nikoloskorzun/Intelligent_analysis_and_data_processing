@@ -1,0 +1,118 @@
+
+
+df_enhanced.csv_selected_features.csv_scaled.csv; {'input_shape': 12, 'num_classes': 7, 'optimizer': 'adam', 'learning_rate': 0.0001, 'dense_units': [128, 64, 32], 'kernel_size': 3, 'pool_size': 1, 'use_batch_norm': True, 'filters': [32, 64, 128, 256]};train; acc= 0.8998662886187021;
+train; bal_acc= 0.873142621827496;
+train; f1_macro= 0.8510133638622364;
+train; f1_weighted= 0.900397641119395;
+train; classification_report=               precision    recall  f1-score   support
+
+     Class 1       0.88      0.90      0.89    122592
+     Class 2       0.93      0.91      0.92    182097
+     Class 3       0.93      0.86      0.89     21117
+     Class 4       0.76      0.82      0.79      1775
+     Class 5       0.69      0.82      0.74      5489
+     Class 6       0.76      0.87      0.81      9099
+     Class 7       0.89      0.94      0.91     11578
+
+    accuracy                           0.90    353747
+   macro avg       0.83      0.87      0.85    353747
+weighted avg       0.90      0.90      0.90    353747
+;
+test; acc= 0.891709788168713;
+test; bal_acc= 0.8583838222226726;
+test; f1_macro= 0.8370638441726382;
+test; f1_weighted= 0.8923418369689833;
+test; classification_report=               precision    recall  f1-score   support
+
+     Class 1       0.87      0.89      0.88     34798
+     Class 2       0.92      0.90      0.91     52089
+     Class 3       0.92      0.86      0.89      6151
+     Class 4       0.73      0.78      0.75       502
+     Class 5       0.66      0.79      0.72      1530
+     Class 6       0.75      0.86      0.80      2665
+     Class 7       0.88      0.93      0.91      3336
+
+    accuracy                           0.89    101071
+   macro avg       0.82      0.86      0.84    101071
+weighted avg       0.89      0.89      0.89    101071
+;
+valid; acc= 0.8929080259616907;
+valid; bal_acc= 0.8616433504810317;
+valid; f1_macro= 0.8377762361007335;
+valid; f1_weighted= 0.8935515152405874;
+valid; classification_report=               precision    recall  f1-score   support
+
+     Class 1       0.87      0.89      0.88     17615
+     Class 2       0.92      0.90      0.91     26041
+     Class 3       0.92      0.85      0.88      2961
+     Class 4       0.74      0.81      0.77       256
+     Class 5       0.65      0.81      0.72       743
+     Class 6       0.75      0.84      0.79      1277
+     Class 7       0.88      0.92      0.90      1643
+
+    accuracy                           0.89     50536
+   macro avg       0.82      0.86      0.84     50536
+weighted avg       0.90      0.89      0.89     50536
+;
+
+
+
+0 {'input_shape': 12, 'num_classes': 7, 'optimizer': 'adam', 'learning_rate': 0.0001, 'dense_units': [128, 64, 32], 'kernel_size': 3, 'pool_size': 1, 'use_batch_norm': True, 'filters': [16, 32, 64, 128, 256]}
+
+
+train; acc= 0.9300630111350767;
+train; bal_acc= 0.8975952463209149;
+train; f1_macro= 0.893941163044181;
+train; f1_weighted= 0.9301073922287543;
+train; classification_report=               precision    recall  f1-score   support
+
+     Class 1       0.92      0.93      0.92    124004
+     Class 2       0.95      0.94      0.94    179428
+     Class 3       0.93      0.92      0.93     19638
+     Class 4       0.79      0.82      0.81      1860
+     Class 5       0.85      0.82      0.83      6765
+     Class 6       0.86      0.91      0.88      9842
+     Class 7       0.94      0.95      0.94     12210
+
+    accuracy                           0.93    353747
+   macro avg       0.89      0.90      0.89    353747
+weighted avg       0.93      0.93      0.93    353747
+;
+test; acc= 0.9175332192221309;
+test; bal_acc= 0.8713998419191481;
+test; f1_macro= 0.8695236485272656;
+test; f1_weighted= 0.9176029993594275;
+test; classification_report=               precision    recall  f1-score   support
+
+     Class 1       0.90      0.92      0.91     35149
+     Class 2       0.94      0.93      0.93     51350
+     Class 3       0.91      0.91      0.91      5777
+     Class 4       0.75      0.75      0.75       538
+     Class 5       0.81      0.78      0.80      1926
+     Class 6       0.83      0.88      0.85      2842
+     Class 7       0.93      0.93      0.93      3489
+
+    accuracy                           0.92    101071
+   macro avg       0.87      0.87      0.87    101071
+weighted avg       0.92      0.92      0.92    101071
+;
+valid; acc= 0.918711413645718;
+valid; bal_acc= 0.8778516629228813;
+valid; f1_macro= 0.8729487343235162;
+valid; f1_weighted= 0.9188184749963217;
+valid; classification_report=               precision    recall  f1-score   support
+
+     Class 1       0.91      0.92      0.91     17814
+     Class 2       0.94      0.93      0.93     25677
+     Class 3       0.91      0.91      0.91      2779
+     Class 4       0.76      0.78      0.77       275
+     Class 5       0.81      0.80      0.80       939
+     Class 6       0.82      0.89      0.85      1335
+     Class 7       0.93      0.93      0.93      1717
+
+    accuracy                           0.92     50536
+   macro avg       0.87      0.88      0.87     50536
+weighted avg       0.92      0.92      0.92     50536
+;
+
+
